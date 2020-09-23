@@ -169,8 +169,8 @@ li {
 
 .works .works-cards img {
   width: 300px;
-  height: auto;
-  border: 1px solid red;
+  height: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .works .works-cards .card {
