@@ -1,0 +1,386 @@
+:root {
+    --mainColor: #0F111A;
+    --backgroundColor: #B85252;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+    font-family: 'Russo One', sans-serif;
+}
+
+p,
+li,
+span,
+label,
+input,
+textarea,
+div {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:1200px) {
+    .main-container {
+        width: 90%;
+    }
+}
+
+.header-wrapper {
+    background-color: rgba($color: #0F111A, $alpha: .1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+
+
+    .header-logo {
+        h3 {
+            font-size: 30px;
+            margin-bottom: 0;
+            color: var(--backgroundColor);
+        }
+
+        p {
+            margin-top: 0;
+        }
+    }
+
+    .header-nav {
+        height: 100%;
+
+        @media screen and (max-width:580px) {
+            display: none;
+        }
+
+        ul {
+            display: flex;
+            height: 100%;
+
+            a {
+                margin-left: 10px;
+                line-height: 140px;
+                padding: 5px;
+                transition: background-color .3s ease;
+
+                li {
+                    height: 100%;
+                    color: var(--mainColor);
+                }
+            }
+
+            a:hover {
+                background: var(--backgroundColor);
+
+                li {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .bars {
+        display: none;
+        cursor: pointer;
+
+        @media screen and(max-width:580px) {
+            display: block;
+        }
+
+        i {
+            font-size: 24px;
+
+        }
+    }
+}
+
+.works {
+    padding-top: 40px;
+    padding-bottom: 80px;
+
+    .stroke {
+        width: 100%;
+        height: 2px;
+        background: #000;
+        position: relative;
+
+        .stroke-shadow {
+            width: 100px;
+            height: 100px;
+            background: #000;
+            position: absolute;
+            left: 50%;
+            top: -100px;
+            box-shadow: 0 0 100px black;
+        }
+    }
+
+    .works-cards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: stretch;
+
+        img {
+            width: 300px;
+            height: auto;
+            border: 1px solid red;
+        }
+
+        .card {
+            width: 45%;
+            height: 200px;
+            background: var(--backgroundColor);
+            margin-bottom: 20px;
+
+
+
+            @media screen and (max-width: 340px) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.resume {
+    background-color: var(--backgroundColor);
+    color: #fff;
+    padding-bottom: 40px;
+
+    .resume-wrapper {
+        display: flex;
+
+        @media screen and (max-width:720px) {
+            flex-wrap: wrap;
+        }
+
+        .resume-info {
+            width: 65%;
+            padding-right: 40px;
+
+            @media screen and (max-width:720px) {
+                width: 100%;
+                padding-right: 0;
+            }
+
+            .resume-info-top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                img {
+                    width: 120px;
+                    height: 100px;
+                    border: 7px solid #fff;
+                    margin-top: -40px;
+                }
+
+                .resume-name {
+                    display: flex;
+                    align-items: center;
+
+                    .name {
+                        margin-left: 20px;
+
+                        span {
+                            font-style: italic;
+                            font-size: 20px;
+                        }
+
+                        a {
+                            display: block;
+                            color: #fff;
+                            font-size: 13px;
+
+                            i {
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+
+                }
+
+                .links {
+                    i {
+                        color: #ffffff;
+                        font-size: 35px;
+                        margin-right: 15px;
+
+                        @media screen and (max-width:475px) {
+                            font-size: 20px;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .resume-skills {
+            width: 35%;
+
+            @media screen and (max-width:720px) {
+                width: 100%;
+                text-align: center;
+            }
+
+            .all-skills {
+                padding-left: 30px;
+
+                @media screen and (max-width:720px) {
+                    padding-left: 0;
+                }
+
+                .skill-wrapper {
+                    display: flex;
+
+                    span {
+                        min-width: 20%;
+                        text-align: center;
+
+                        @media screen and(max-width:850px) {
+                            min-width: 30%;
+                        }
+
+                        @media screen and(max-width:720px) {
+                            min-width: 10%;
+                        }
+
+                        @media screen and(max-width:580px) {
+                            min-width: 20%;
+                        }
+                    }
+
+                    .skill {
+                        display: block;
+                        width: 100%;
+                        height: 15px;
+                        background: rgba($color: #fff, $alpha: .2);
+                        margin-bottom: 15px;
+                        position: relative;
+                    }
+
+                    .skill::after {
+                        content: '';
+                        display: block;
+                        background: #282828;
+                        position: absolute;
+                        width: 90%;
+                        height: 100%;
+                    }
+
+                }
+
+                .skill-wrapper:nth-child(2) .skill::after {
+                    width: 85%;
+                }
+
+                .skill-wrapper:nth-child(3) .skill::after {
+                    width: 65%;
+                }
+
+                .skill-wrapper:nth-child(4) .skill::after {
+                    width: 80%;
+                }
+
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: #282828;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.main {
+    overflow: hidden;
+}
+
+.side-menu-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: #000000, $alpha: .5);
+    opacity: 0;
+    z-index: -1;
+    transition: .5s;
+
+}
+
+#side-menu {
+    background-color: #C15656;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    right: -50%;
+    transition: .5s;
+
+    a {
+        text-align: center;
+        margin-top: 40px;
+        display: block;
+    }
+
+    li {
+        color: #ffffff;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    li:hover {
+        background-color: #fff;
+        color: var(--backgroundColor);
+    }
+}
+
+
+
+.side-menu-wrapper.anim {
+    opacity: 1;
+    z-index: 1;
+
+    @media screen and (min-width:580px) {
+        display: none;
+    }
+}
+
+.side-menu-wrapper.anim #side-menu {
+    right: 0;
+}
