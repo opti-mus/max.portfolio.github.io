@@ -136,6 +136,13 @@ li {
   padding-bottom: 80px;
 }
 
+.works .main-container {
+  background: rgba(15, 17, 26, 0.1);
+  padding: 5px;
+  padding-bottom: 20px;
+  border-radius: 4px;
+}
+
 .works-title {
   text-align: center;
 }
