@@ -201,7 +201,12 @@ li {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-
+                @media screen and (max-width:360px){
+                    justify-content: flex-end;
+                    flex-wrap: wrap;
+                }
+                    
+                
                 img {
                     width: 120px;
                     height: 100px;
@@ -219,15 +224,16 @@ li {
                         span {
                             font-style: italic;
                             font-size: 20px;
+                            white-space: nowrap;
                         }
 
                         a {
                             display: block;
                             color: #fff;
                             font-size: 13px;
-
+                            
                             i {
-                                margin-right: 10px;
+                                padding-right: 10px;
                             }
                         }
                     }
@@ -235,13 +241,16 @@ li {
                 }
 
                 .links {
-                    i {
-                        color: #ffffff;
-                        font-size: 35px;
+                    a {
                         margin-right: 15px;
-
+                        font-size: 23px;
+                        color: #ffffff;
+                        &:hover {
+                            color: var(--backgroundColor);
+                        }
                         @media screen and (max-width:475px) {
-                            font-size: 20px;
+                            margin-right: 0;
+                            font-size: 15px;
                             margin-right: 5px;
                         }
                     }
