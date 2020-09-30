@@ -17,12 +17,10 @@ console.log(document.querySelector('.header-nav ul').children);
 function fillMenu() {
     const menu = document.querySelector('#side-menu');
     const nav = document.querySelector('.header-nav ul').children;
-    console.log(nav);
+    
     for (let i = 0; i < nav.length; i++) {
         menu.innerHTML += nav[i].outerHTML
     }
-
-
 
 }
 fillMenu()

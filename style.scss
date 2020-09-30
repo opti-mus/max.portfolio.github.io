@@ -1,5 +1,5 @@
 :root {
-    --mainColor: #0F111A;
+    --mainColor: #10121B;
     --backgroundColor: #B85252;
 }
 
@@ -58,7 +58,7 @@ li {
 }
 
 .header-wrapper {
-    background-color: rgba($color: #0F111A, $alpha: .1);
+    background-color: var(--mainColor);
 }
 
 .header {
@@ -67,7 +67,7 @@ li {
     align-items: center;
     height: 100px;
     a {
-        color: #000;
+        color: #ffffff;
     }
 
     .header-logo {
@@ -95,13 +95,12 @@ li {
 
             a {
                 margin-left: 10px;
-                line-height: 140px;
-                padding: 5px;
+                padding: 70px 5px 0;
                 transition: background-color .3s ease;
 
                 li {
                     height: 100%;
-                    color: var(--mainColor);
+                    color: #ffffff;
                 }
             }
 
@@ -118,7 +117,7 @@ li {
     .bars {
         display: none;
         cursor: pointer;
-
+        color: #ffff;
         @media screen and(max-width:580px) {
             display: block;
         }
@@ -133,9 +132,9 @@ li {
 .works {
     padding-top: 40px;
     padding-bottom: 80px;
-
+    background: rgba($color: #000000, $alpha: 0.1);
     .main-container {
-        background: rgba($color: #0F111A, $alpha: .1);
+        background: var(--mainColor);
         padding: 5px;
         padding-bottom: 20px;
         border-radius: 4px;
@@ -143,6 +142,8 @@ li {
 
     &-title {
         text-align: center;
+        color: #ffffff;
+        letter-spacing: 5px;
     }
 
     &-cards {
@@ -150,7 +151,12 @@ li {
         justify-content: space-around;
         flex-wrap: wrap;
         align-items: stretch;
-
+        a{
+            padding: 10px;
+            background: #fff;
+            margin-bottom: 10px;
+            border-radius: 3px;
+        }
         img {
             width: 300px;
             height: 300px;
@@ -178,7 +184,7 @@ li {
 }
 
 .resume {
-    background-color: var(--backgroundColor);
+    background-color: var(--mainColor);
     color: #fff;
     padding-bottom: 40px;
 
@@ -298,7 +304,7 @@ li {
                     .skill::after {
                         content: '';
                         display: block;
-                        background: #282828;
+                        background: var(--backgroundColor);
                         position: absolute;
                         width: 90%;
                         height: 100%;
