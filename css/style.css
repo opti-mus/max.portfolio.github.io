@@ -1,5 +1,5 @@
 :root {
-  --mainColor: #0F111A;
+  --mainColor: #10121B;
   --backgroundColor: #B85252;
 }
 
@@ -56,7 +56,7 @@ li {
 }
 
 .header-wrapper {
-  background-color: rgba(15, 17, 26, 0.1);
+  background-color: var(--mainColor);
 }
 
 .header {
@@ -73,7 +73,7 @@ li {
 }
 
 .header a {
-  color: #000;
+  color: #ffffff;
 }
 
 .header .header-logo h3 {
@@ -105,15 +105,14 @@ li {
 
 .header .header-nav ul a {
   margin-left: 10px;
-  line-height: 140px;
-  padding: 5px;
+  padding: 70px 5px 0;
   -webkit-transition: background-color .3s ease;
   transition: background-color .3s ease;
 }
 
 .header .header-nav ul a li {
   height: 100%;
-  color: var(--mainColor);
+  color: #ffffff;
 }
 
 .header .header-nav ul a:hover {
@@ -127,6 +126,7 @@ li {
 .header .bars {
   display: none;
   cursor: pointer;
+  color: #ffff;
 }
 
 @media screen and (max-width: 580px) {
@@ -142,10 +142,11 @@ li {
 .works {
   padding-top: 40px;
   padding-bottom: 80px;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .works .main-container {
-  background: rgba(15, 17, 26, 0.1);
+  background: var(--mainColor);
   padding: 5px;
   padding-bottom: 20px;
   border-radius: 4px;
@@ -153,6 +154,8 @@ li {
 
 .works-title {
   text-align: center;
+  color: #ffffff;
+  letter-spacing: 5px;
 }
 
 .works-cards {
@@ -166,6 +169,13 @@ li {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+}
+
+.works-cards a {
+  padding: 10px;
+  background: #fff;
+  margin-bottom: 10px;
+  border-radius: 3px;
 }
 
 .works-cards img {
@@ -196,7 +206,7 @@ li {
 }
 
 .resume {
-  background-color: var(--backgroundColor);
+  background-color: var(--mainColor);
   color: #fff;
   padding-bottom: 40px;
 }
@@ -348,7 +358,7 @@ li {
 .resume .resume-wrapper .resume-skills .all-skills .skill-wrapper .skill::after {
   content: '';
   display: block;
-  background: #282828;
+  background: var(--backgroundColor);
   position: absolute;
   width: 90%;
   height: 100%;
