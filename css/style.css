@@ -242,6 +242,16 @@ li {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 360px) {
+  .resume .resume-wrapper .resume-info .resume-info-top {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .resume .resume-wrapper .resume-info .resume-info-top img {
   width: 120px;
   height: 100px;
@@ -265,6 +275,7 @@ li {
 .resume .resume-wrapper .resume-info .resume-info-top .resume-name .name span {
   font-style: italic;
   font-size: 20px;
+  white-space: nowrap;
 }
 
 .resume .resume-wrapper .resume-info .resume-info-top .resume-name .name a {
@@ -274,18 +285,23 @@ li {
 }
 
 .resume .resume-wrapper .resume-info .resume-info-top .resume-name .name a i {
-  margin-right: 10px;
+  padding-right: 10px;
 }
 
-.resume .resume-wrapper .resume-info .resume-info-top .links i {
-  color: #ffffff;
-  font-size: 35px;
+.resume .resume-wrapper .resume-info .resume-info-top .links a {
   margin-right: 15px;
+  font-size: 23px;
+  color: #ffffff;
+}
+
+.resume .resume-wrapper .resume-info .resume-info-top .links a:hover {
+  color: var(--backgroundColor);
 }
 
 @media screen and (max-width: 475px) {
-  .resume .resume-wrapper .resume-info .resume-info-top .links i {
-    font-size: 20px;
+  .resume .resume-wrapper .resume-info .resume-info-top .links a {
+    margin-right: 0;
+    font-size: 15px;
     margin-right: 5px;
   }
 }
