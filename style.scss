@@ -156,30 +156,23 @@ li {
             background: #fff;
             margin-bottom: 10px;
             border-radius: 3px;
+            width: calc(100%/4);
+            height: auto;
+            @media screen and (max-width: 680px) {
+                width: calc(100%/2.5);
+            }
+            @media screen and (max-width: 320px) {
+                width: 80%;
+            }
         }
         img {
-            width: 300px;
-            height: 300px;
+            width: 100%;
+            height: auto;
             border: 1px solid rgba($color: #000000, $alpha: .3);
             margin-bottom: 10px;
-            @media screen and (max-width: 426px) {
-                width: 150px;
-                height: 150px;
-            }
+            
         }
 
-        .card {
-            width: 45%;
-            height: 200px;
-            background: var(--backgroundColor);
-            margin-bottom: 20px;
-
-
-
-            @media screen and (max-width: 340px) {
-                width: 100%;
-            }
-        }
     }
 }
 
