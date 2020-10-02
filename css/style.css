@@ -82,8 +82,20 @@ li {
   color: var(--backgroundColor);
 }
 
+@media screen and (max-width: 425px) {
+  .header .header-logo h3 {
+    font-size: 25px;
+  }
+}
+
 .header .header-logo p {
   margin-top: 0;
+}
+
+@media screen and (max-width: 425px) {
+  .header .header-logo p {
+    font-size: 13px;
+  }
 }
 
 .header .header-nav {
@@ -174,7 +186,7 @@ li {
 .works-cards a {
   padding: 10px;
   background: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   border-radius: 3px;
   width: calc(100%/4);
   height: auto;
