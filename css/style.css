@@ -31,9 +31,6 @@ div {
 
 a {
   text-decoration: none;
-}
-
-a:visited {
   color: #ffffff;
 }
 
@@ -190,6 +187,7 @@ li {
   border-radius: 3px;
   width: calc(100%/4);
   height: auto;
+  color: #fff;
 }
 
 @media screen and (max-width: 680px) {
