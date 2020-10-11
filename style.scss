@@ -232,7 +232,9 @@ li {
                 .resume-name {
                     display: flex;
                     align-items: center;
-
+                    img {
+                        background-color: #ffffff;
+                    }
                     .name {
                         margin-left: 20px;
 

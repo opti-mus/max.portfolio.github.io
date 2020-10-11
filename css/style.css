@@ -278,6 +278,10 @@ li {
           align-items: center;
 }
 
+.resume .resume-wrapper .resume-info .resume-info-top .resume-name img {
+  background-color: #ffffff;
+}
+
 .resume .resume-wrapper .resume-info .resume-info-top .resume-name .name {
   margin-left: 20px;
 }
