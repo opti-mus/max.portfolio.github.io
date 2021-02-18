@@ -181,6 +181,7 @@ li {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  padding-top: 25px;
 }
 
 .works-cards a {
