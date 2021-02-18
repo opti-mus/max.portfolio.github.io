@@ -1,12 +1,16 @@
 :root {
-  --mainColor: #2C2C2C;
-  --backgroundColor: #B85252;
+  --mainColor: #2c2c2c;
+  --backgroundColor: #b85252;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.1);
 }
 
 h1,
@@ -115,8 +119,8 @@ li {
 .header .header-nav ul a {
   margin-left: 10px;
   padding: 70px 5px 0;
-  -webkit-transition: background-color .3s ease;
-  transition: background-color .3s ease;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .header .header-nav ul a li {
@@ -151,7 +155,6 @@ li {
 .works {
   padding-top: 40px;
   padding-bottom: 80px;
-  background: rgba(0, 0, 0, 0.1);
 }
 
 .works .main-container {
@@ -185,14 +188,14 @@ li {
   background: #fff;
   margin-bottom: 25px;
   border-radius: 3px;
-  width: calc(100%/4);
+  width: calc(100% / 4);
   height: auto;
   color: #fff;
 }
 
 @media screen and (max-width: 680px) {
   .works-cards a {
-    width: calc(100%/2.5);
+    width: calc(100% / 2.5);
   }
 }
 
@@ -421,19 +424,19 @@ li {
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   z-index: -1;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #side-menu {
-  background-color: #C15656;
+  background-color: #c15656;
   width: 50%;
   height: 100%;
   position: fixed;
   z-index: 100;
   right: -50%;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #side-menu a {

@@ -1,148 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Russo+One&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/9f5541431a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.css">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9f5541431a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.css"
+    />
+    <link rel="stylesheet" href="styles/css/style.min.css" />
     <title>Web Portfolio</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="main" id="main">
-        <div class="side-menu-wrapper" data-modal='1'>
-            <div id="side-menu">
+      <div class="side-menu-wrapper" data-modal="1">
+        <div id="side-menu"></div>
+      </div>
+      <div class="header-wrapper">
+        <div class="main-container">
+          <header class="header">
+            <div class="header-logo">
+              <a href="/">
+                <h3>PORTFOLIO</h3>
+                <p>My Web Design Portfolio</p>
+              </a>
             </div>
+            
+          </header>
         </div>
-        <div class="header-wrapper">
-            <div class="main-container">
-                <header class="header">
+      </div>
 
-                    <div class="header-logo">
-                        <a href="/">
-                            <h3>PORTFOLIO</h3>
-                            <p>My Web Design Portfolio</p>
-                        </a>
-                    </div>
-                    <div class="header-nav">
-                        <ul>
-                            <a href="#main">
-                                <li>HOME</li>
-                            </a>
-                            <a href="#works">
-                                <li>WORKS</li>
-                            </a>
-                            <a href="#about">
-                                <li>ABOUT</li>
-                            </a>
-                            <a href="#">
-                                <li>CONTACTS</li>
-                            </a>
-                        </ul>
-                    </div>
-                    <div class="bars">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                </header>
-            </div>
+      <section class="works" id="works">
+        <div class="main-container">
+          <h1 class="works-title">Works</h1>
+          <div class="works-cards">
+            <a
+              href="img/exanger-min.jpg"
+              data-caption='<a href="https://exchanger-69a8a.web.app/">Посмотреть работу</a>'
+            >
+              <img src="img/img-300/exanger-min.jpg" alt="Lion" />
+            </a>
+            <a
+              href="img/calc-min.jpg"
+              data-caption='<a href="https://calc-ulator.web.app/">Посмотреть работу</a>'
+            >
+              <img src="img/img-300/calc-min.jpg" alt="Lion" />
+            </a>
+            <a
+              href="img/todo-min.jpg"
+              data-caption='<a href="https://todo-2a72e.web.app/">Посмотреть работу</a>'
+            >
+              <img src="img/img-300/todo-min.jpg" alt="Lion" />
+            </a>
+            <a
+              href="img/portland-min.png"
+              data-caption='<a href="https://opti-mus.github.io/site-review/">Посмотреть работу</a>'
+            >
+              <img src="img/img-300/portland-preview-min2.png" alt="Lion" />
+            </a>
+            <a
+              href="img/wooder-min.png"
+              data-caption='<a href="https://opti-mus.github.io/wooder/">Посмотреть работу</a>'
+            >
+              <img src="img/img-300/wooder-preview-min2.png" alt="Lion" />
+            </a>
+            <a
+              href="img/dark-site-min.png"
+              data-caption='<a href="https://opti-mus.github.io/dark-site/">Посмотреть работу</a>'
+            >
+              <img src="img/img-300/dark-site-preview.png" alt="Lion" />
+            </a>
+          </div>
         </div>
-
-        <section class="works" id="works">
-            <div class="main-container">
-                <h1 class="works-title">Works</h1>
-                <div class="works-cards">
-                    <a href="img/exanger-min.jpg" data-caption='<a href="https://exchanger-69a8a.web.app/">Посмотреть работу</a>'>
-                        <img src="img/img-300/exanger-min.jpg" alt="Lion">
-                    </a>
-                    <a href="img/calc-min.jpg" data-caption='<a href="https://calc-ulator.web.app/">Посмотреть работу</a>'>
-                        <img src="img/img-300/calc-min.jpg" alt="Lion">
-                    </a>
-                    <a href="img/todo-min.jpg" data-caption='<a href="https://todo-2a72e.web.app/">Посмотреть работу</a>'>
-                        <img src="img/img-300/todo-min.jpg" alt="Lion">
-                    </a>
-                    <a href="img/portland-min.png"
-                        data-caption='<a href="https://opti-mus.github.io/site-review/">Посмотреть работу</a>'>
-                        <img src="img/img-300/portland-preview-min2.png" alt="Lion">
-                    </a>
-                    <a href="img/wooder-min.png"
-                        data-caption='<a href="https://opti-mus.github.io/wooder/">Посмотреть работу</a>'>
-                        <img src="img/img-300/wooder-preview-min2.png" alt="Lion">
-                    </a>
-                    <a href="img/dark-site-min.png"
-                        data-caption='<a href="https://opti-mus.github.io/dark-site/">Посмотреть работу</a>'>
-                        <img src="img/img-300/dark-site-preview.png" alt="Lion">
-                    </a>    
-                </div>
-            </div>
-        </section>
-        <section class="resume" id="about">
-            <div class="main-container">
-                <div class="resume-wrapper">
-                    <div class="resume-info">
-                        <div class="resume-info-top">
-                            <div class="resume-name">
-                                <img src="/people.jpg" alt="">
-                                <div class="name">
-                                    <span>Max Kolosov</span>
-                                    <a href="#"><i class="fas fa-map-marker-alt"></i>Odessa,Ukraine </a>
-                                </div>
-
-                            </div>
-                            <div class="links">
-                                <a href="https://twitter.com/"><i class="fab fa-twitter fa-lg"></i></a>
-                                <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg"></i></a>
-                            </div>
-                        </div>
-                        <div class="resume-info-bottom">
-                            <p>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum soluta ipsam quia
-                                officiis
-                                aperiam nemo aut inventore praesentium perspiciatis? Saepe exercitationem, vel beatae
-                                quasi
-                                doloribus aliquid id quos voluptate molestias. Atque deleniti unde nulla!
-                                Exercitationem,
-                                modi nam repellendus, ex a corrupti dolorum ipsum atque error impedit quasi ea beatae
-                                officiis.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="resume-skills">
-                        <h4>My Skills</h4>
-                        <div class="all-skills">
-                            <div class="skill-wrapper">
-                                <span>JS</span>
-                                <div class="skill"></div>
-
-                            </div>
-                            <div class="skill-wrapper">
-                                <span>HTML</span>
-                                <div class="skill"></div>
-
-                            </div>
-                            <div class="skill-wrapper">
-                                <span>React</span>
-                                <div class="skill"></div>
-
-                            </div>
-                            <div class="skill-wrapper">
-                                <span>CSS</span>
-                                <div class="skill"></div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer class="footer">
-            Copyright © 2020
-        </footer>
+      </section>
+     
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
