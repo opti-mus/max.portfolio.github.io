@@ -189,7 +189,7 @@ li {
   background: #fff;
   margin-bottom: 25px;
   border-radius: 3px;
-  width: calc(100% / 4);
+  width: calc(100% / 3.4);
   height: auto;
   color: #fff;
 }
@@ -208,9 +208,43 @@ li {
 
 .works-cards img {
   width: 100%;
-  height: auto;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  margin-bottom: 10px;
+  height: 305px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+@media screen and (max-width: 1024px) {
+  .works-cards img {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .works-cards img {
+    height: 210px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .works-cards img {
+    height: 160px;
+  }
+}
+
+.card__figure {
+  margin: 0;
+}
+
+.card__image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  -o-object-position: top;
+     object-position: top;
+  margin: 0;
 }
 
 .resume {
